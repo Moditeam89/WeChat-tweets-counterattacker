@@ -45,12 +45,16 @@ elderly-copywriter/
 
 ## 快速开始
 
-### 1. 安装依赖
-
+### 1. 克隆项目并安装依赖
 ```bash
-pip3.11 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+git clone https://github.com/sosathegitter/WeChat-tweets-counterattacker.git
+cd WeChat-tweets-counterattacker
+pip install -r requirements.txt
+2. 下载模型权重 (Model weights)
+本项目使用 Qwen3-Embedding-0.6B 进行文案向量匹配。由于权重文件体积较大，请在首次运行时执行以下脚本自动获取：
+python3.11 scripts/download_model.py
+```bash
 pip install python-dotenv requests
-python3.11 -c "from modelscope import snapshot_download; snapshot_download('qwen/Qwen3-Embedding-0.6B', cache_dir='/root/.openclaw/models')
 
 ### 2. 配置环境变量
 
